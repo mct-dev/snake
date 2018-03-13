@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Snake Game!</title>
+</head>
+ <style>
+     canvas {
+         border: 1px solid #353535;
+         margin: 0 auto;
+         position: absolute;
+         top:50px;
+         left: 0;
+         right: 0;
+         bottom: 0;
+     }
+     body {
+         background-color: #f4f4f4;
+         font-family: Quicksand;
+         color: #353535
+     }
+     i {
+         position: absolute;
+         top: 20px;
+         left: 30px;
+         padding: 20px;
+         font-size: 36px !important;
+     }
+     #back {
+         text-decoration: none;
+         color: inherit;
+         font-weight: bold;
+
+     }
+     #mobile-hider {
+         width: 80%;
+         height: 100%;
+         text-align:center;
+         padding: 10em 10%;
+         line-height: 2em;
+
+     }
+ </style>
+<body>
+    <i class="material-icons" onclick="goBack()">arrow_back</i>
+    <script src="/dist/c29b79decb49f58fd0d994814dfc6972.js"></script>
+    <script>
+      function goBack() {
+          window.history.back()
+      }
+    </script>
+</body>
+</html>

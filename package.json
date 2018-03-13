@@ -2,12 +2,15 @@
   "name": "snake",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist",
     "start": "npx parcel index.html",
-    "build": "npx parcel build index.html",
-    "build-gh": "npx parcel build index.html --public-url https://mct-dev.github.io/snake"
+    "build": "npm run clean && npx parcel build index.html",
+    "build-gh": "npm run clean && npx parcel build index.html --public-url https://mct-dev.github.io/snake",
+    "push-to-gh-pages": "git subtree push --prefix dist/ origin gh-pages"
+
   },
   "author": "",
   "license": "ISC",
